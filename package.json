@@ -18,6 +18,8 @@
   },
 
   "scripts"           : {
+    "version"           : "changeset version",
+    "release"           : "changeset publish",
     "clean"             : "rimraf node_modules dist .turbo"
   },
 
@@ -26,6 +28,7 @@
   "types"             : "./dist/index.d.ts",
 
   "devDependencies"   : {
+    "@changesets/cli"           : "^2.29.8",
     "@eslint/js"                : "^10.0.1",
     "@next/eslint-plugin-next"  : "^16.2.1",
     "eslint"                    : "^10.1.0",
@@ -48,6 +51,7 @@
     "./next-config"     : "./src/next.json",
     "./react-config"    : "./src/react.json"
   },
+  "files"             : ["src", "readme.md", "license.md"],
 
   "publishConfig"     : {
     "access"  : "public"
