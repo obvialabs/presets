@@ -1,10 +1,11 @@
 <b align="center">
 
-[![Version](https://img.shields.io/npm/v/@obvia/presets?style=for-the-badge&logo=npm&labelColor=ff2949&color=e93146&logoColor=white&label=Version)](https://www.npmjs.com/package/@obvia/presets)
-[![Typescript](https://img.shields.io/static/v1?message=5.9.3&style=for-the-badge&logo=typescript&labelColor=1886c9&color=0A66C2&logoColor=white&label=TypeScript)](https://www.typescriptlang.org/)
-[![Linting](https://img.shields.io/static/v1?message=Eslint&style=for-the-badge&logo=eslint&labelColor=eb6a3b&color=cc5c33&logoColor=white&label=Linting)](https://npmjs.com/package/@obvia/presets)
-[![License](https://img.shields.io/static/v1?message=MIT&style=for-the-badge&logo=opensourceinitiative&labelColor=25D366&color=20bd5b&logoColor=white&label=License)](https://npmjs.com/package/@obvia/presets)
-[![CI](https://img.shields.io/github/actions/workflow/status/obvialabs/presets/publish.yml?style=for-the-badge&logo=githubactions&labelColor=161717&color=0f0f0f&logoColor=white&label=CI)](https://github.com/obvialabs/presets/actions)
+  [![Version](https://img.shields.io/npm/v/@obvia/presets?style=for-the-badge&logo=npm&labelColor=ff2949&color=e93146&logoColor=white&label=Version)](https://www.npmjs.com/package/@obvia/presets)
+  [![Typescript](https://img.shields.io/static/v1?message=5.9.3&style=for-the-badge&logo=typescript&labelColor=1886c9&color=0A66C2&logoColor=white&label=TypeScript)](https://www.typescriptlang.org/)
+  [![Linting](https://img.shields.io/static/v1?message=Eslint&style=for-the-badge&logo=eslint&labelColor=eb6a3b&color=cc5c33&logoColor=white&label=Linting)](https://npmjs.com/package/@obvia/presets)
+  [![License](https://img.shields.io/static/v1?message=MIT&style=for-the-badge&logo=opensourceinitiative&labelColor=25D366&color=20bd5b&logoColor=white&label=License)](https://npmjs.com/package/@obvia/presets)
+  [![CI](https://img.shields.io/github/actions/workflow/status/obvialabs/presets/publish.yml?style=for-the-badge&logo=githubactions&labelColor=161717&color=0f0f0f&logoColor=white&label=CI)](https://github.com/obvialabs/presets/actions)
+
 </b>
 
 > Designed to provide consistent rules and configurations across projects with minimal setup.
