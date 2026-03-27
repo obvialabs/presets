@@ -51,6 +51,7 @@
     "./next-config"     : "./src/next.json",
     "./react-config"    : "./src/react.json"
   },
+  "files"             : ["src", "readme.md", "license.md"],
 
   "publishConfig"     : {
     "access"  : "public"
