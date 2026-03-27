@@ -1,0 +1,59 @@
+# Workflow name
+name: Publish presets
+
+# Workflow conditions
+on:
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+  # Run on pushes to tags
+  push:
+    tags:
+      - 'v*.*.*'
+
+# Grant write permissions to all scopes
+permissions: write-all
+
+# Ensure only one workflow runs per ref at a time
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+# Workflow jobs
+jobs:
+  # Job (Publish)
+  publish:
+    # Job name shown in GitHub Actions UI
+    name: Publish package (release)
+    # Runner environment (Ubuntu)
+    runs-on: ubuntu-latest
+    # Job steps
+    steps:
+      # Checkout the repository code from main branch
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      # Set up Node.js environment using version from .nvmrc
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      # Install a specific version of corepack globally (hardcoded for stability)
+      - name: 'Install corepack@0.31'
+        shell: bash
+        run: |
+          npm install -g corepack@0.31
+          echo "corepack version after: $(corepack --version)"
+      # Enable corepack to manage pnpm
+      - name: Enable Corepack
+        run: corepack enable
+      # Configure npm authentication using secret token
+      - name: Configure npm auth
+        run: npm config set //registry.npmjs.org/:_authToken="${NPM_TOKEN}"
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # Install project dependencies with pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      # Use changesets to either create a release PR or publish packages
+      - name: Publish to npm
+        run: pnpm publish --access public --no-git-checks
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
