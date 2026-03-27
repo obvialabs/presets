@@ -4,7 +4,7 @@
   "keywords"          : ["typescript","eslint","eslint-config","shared-config","presets","obvia","linting","rules"],
   "license"           : "MIT",
   "homepage"          : "https://obvia.studio",
-  "version"           : "0.0.1",
+  "version"           : "0.0.2",
 
   "author"            : {
     "name"      : "Selçuk Çukur",
