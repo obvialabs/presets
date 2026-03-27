@@ -1,0 +1,64 @@
+{
+  "name"              : "@obvia/presets",
+  "description"       : "Opinionated yet onboarding‑friendly eslint and typescript presets for a seamless developer experience",
+  "keywords"          : ["typescript","eslint","eslint-config","shared-config","presets","obvia","linting","rules"],
+  "license"           : "MIT",
+  "homepage"          : "https://obvia.studio",
+  "version"           : "0.0.1",
+
+  "author"            : {
+    "name"      : "Selçuk Çukur",
+    "email"     : "hello@selcukcukur.me",
+    "url"       : "https://selcukcukur.me"
+  },
+
+  "bugs"              : {
+    "email"   : "hello@selcukcukur.me",
+    "url"     : "https://github.com/obvialabs/presets/issues"
+  },
+
+  "scripts"           : {
+    "clean"             : "rimraf node_modules dist .turbo"
+  },
+
+  "main"              : "./dist/index.mjs",
+  "module"            : "./dist/index.mjs",
+  "types"             : "./dist/index.d.ts",
+
+  "devDependencies"   : {
+    "@eslint/js"                : "^10.0.1",
+    "@next/eslint-plugin-next"  : "^16.2.1",
+    "eslint"                    : "^10.1.0",
+    "eslint-config-prettier"    : "^10.1.8",
+    "eslint-plugin-only-warn"   : "^1.2.1",
+    "eslint-plugin-react"       : "^7.37.5",
+    "eslint-plugin-react-hooks" : "^7.0.1",
+    "eslint-plugin-turbo"       : "^2.8.20",
+    "globals"                   : "^17.4.0",
+    "typescript"                : "^6.0.2",
+    "typescript-eslint"         : "^8.57.2",
+    "rimraf"                    : "^6.1.3"
+  },
+
+  "exports"           : {
+    "./base-eslint"     : "./src/base.js",
+    "./next-eslint"     : "./src/next.js",
+    "./react-eslint"    : "./src/react.js",
+    "./base-config"     : "./src/base.json",
+    "./next-config"     : "./src/next.json",
+    "./react-config"    : "./src/react.json"
+  },
+
+  "publishConfig"     : {
+    "access"  : "public"
+  },
+  "publisher"         : {
+    "type" : "github",
+    "user" : "obvialabs",
+    "repo" : "presets"
+  },
+  "repository"        : {
+    "type"  : "git",
+    "url"   : "git+https://github.com/obvialabs/presets.git"
+  }
+}
