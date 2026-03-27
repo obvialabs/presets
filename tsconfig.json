@@ -1,0 +1,11 @@
+{
+  "extends"         : "./src/react.json",
+  "compilerOptions" : {
+    "baseUrl"   : ".",
+    "paths"     : {
+      "@obvia/presets" : ["src"]
+    }
+  },
+  "include"         : ["."],
+  "exclude"         : ["dist", "build", "node_modules"]
+}
