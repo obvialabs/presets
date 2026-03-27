@@ -4,7 +4,7 @@
   "keywords"          : ["typescript","eslint","eslint-config","shared-config","presets","obvia","linting","rules"],
   "license"           : "MIT",
   "homepage"          : "https://obvia.studio",
-  "version"           : "0.0.1",
+  "version"           : "0.0.2",
 
   "author"            : {
     "name"      : "Selçuk Çukur",
@@ -28,7 +28,6 @@
   "types"             : "./dist/index.d.ts",
 
   "devDependencies"   : {
-    "@changesets/cli"           : "^2.29.8",
     "@eslint/js"                : "^10.0.1",
     "@next/eslint-plugin-next"  : "^16.2.1",
     "eslint"                    : "^10.1.0",
