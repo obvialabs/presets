@@ -1,0 +1,88 @@
+# Ignore : Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Ignore : Environment
+.env
+.env.*
+!*.env.example
+next-env.d.ts
+
+# Ignore : Debug
+*.log
+*.log*
+*.trace
+
+# Ignore : Outputs
+dist/
+build/
+out/
+.swc/
+.cache/
+.temp/
+.tmp/
+*.tsbuildinfo
+
+# Ignore : IDE
+.idea/
+.vscode/
+.fleet/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore : Testing
+coverage/
+test-results/
+jest.config.js
+*.snap
+
+# Ignore : Frameworks & Platforms
+.next/
+.nuxt/
+.vercel/
+.turbo/
+
+# Ignore : CI/CD & Deployment
+.DS_Store
+*.pem
+*.key
+*.crt
+*.pub
+*.ndjson
+*.csv
+*.sqlite
+*.db
+*.tinyb
+.venv
+*.lockb
+
+# Ignore : Vendors & Generated
+contentlayer/
+.contentlayer/
+.content-collections/
+.react-email/
+generated/
+gen/
+types/generated.ts
+
+# Ignore : Monorepo & Workspace
+packages/*/dist/
+packages/*/build/
+packages/*/src/prisma
+apps/*/dist/
+apps/*/build/
+apps/*/.next/
+apps/*/.turbo/
+apps/*/coverage/
+
+# Ignore : OS & Misc
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*.bak
+*.tmp
+.vercel
