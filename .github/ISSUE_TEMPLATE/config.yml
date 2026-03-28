@@ -1,0 +1,17 @@
+# Disable blank issue creation
+blank_issues_enabled: false
+
+# Security Report
+contact_links:
+  - name: "Bug Report"
+    url: "https://github.com/obvialabs/obvia/issues/new/choose"
+    about: "Report any bugs or issues to help us improve the Obvia ecosystem."
+  - name: "Feature Request"
+    url: "https://github.com/obvialabs/obvia/issues/new/choose"
+    about: "Suggest new features or improvements to help us enhance the Obvia ecosystem."
+  - name: "Security Report"
+    url: "https://obvia.studio/contact"
+    about: "Please report security vulnerabilities or concerns using our dedicated security channel."
+  - name: "Community Discussions"
+    url: "https://obvia.studio/"
+    about: "Join discussions, share ideas, and connect with other users."
